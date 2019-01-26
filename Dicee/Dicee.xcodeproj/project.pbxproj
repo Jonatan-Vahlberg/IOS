@@ -12,7 +12,7 @@
 		DF112F7621FBBCC6000527EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF112F7421FBBCC6000527EA /* Main.storyboard */; };
 		DF112F7821FBBCC6000527EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF112F7721FBBCC6000527EA /* Assets.xcassets */; };
 		DF112F7B21FBBCC6000527EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF112F7921FBBCC6000527EA /* LaunchScreen.storyboard */; };
-		DF112F8321FBC755000527EA /* dice.wav in Resources */ = {isa = PBXBuildFile; fileRef = DF112F8221FBC755000527EA /* dice.wav */; };
+		DF8DA03A21FCEC550025FD38 /* dice.wav in Resources */ = {isa = PBXBuildFile; fileRef = DF8DA03921FCEC550025FD38 /* dice.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		DF112F7721FBBCC6000527EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF112F7A21FBBCC6000527EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF112F7C21FBBCC6000527EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DF112F8221FBC755000527EA /* dice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = dice.wav; path = ../../../../Downloads/dice.wav; sourceTree = "<group>"; };
+		DF8DA03921FCEC550025FD38 /* dice.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dice.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 				DF112F7721FBBCC6000527EA /* Assets.xcassets */,
 				DF112F7921FBBCC6000527EA /* LaunchScreen.storyboard */,
 				DF112F7C21FBBCC6000527EA /* Info.plist */,
-				DF112F8221FBC755000527EA /* dice.wav */,
+				DF8DA03921FCEC550025FD38 /* dice.wav */,
 			);
 			path = Dicee;
 			sourceTree = "<group>";
@@ -126,8 +126,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8DA03A21FCEC550025FD38 /* dice.wav in Resources */,
 				DF112F7B21FBBCC6000527EA /* LaunchScreen.storyboard in Resources */,
-				DF112F8321FBC755000527EA /* dice.wav in Resources */,
 				DF112F7821FBBCC6000527EA /* Assets.xcassets in Resources */,
 				DF112F7621FBBCC6000527EA /* Main.storyboard in Resources */,
 			);

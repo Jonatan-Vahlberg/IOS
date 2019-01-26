@@ -59,5 +59,10 @@ class ViewController: UIViewController {
         imageDice1.image = UIImage(named:diceFaceArray[randomDiceIndex1])
         imageDice2.image = UIImage(named:diceFaceArray[randomDiceIndex2])
     }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        updateDiceFaces()
+        playDiceSound()
+    }
 }
 
