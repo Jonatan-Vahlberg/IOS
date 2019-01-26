@@ -10,16 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let ballFaces = ["ball1","ball2","ball3","ball4","ball5"]
+    
+    @IBOutlet weak var ballFaceImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func rollBall(_ sender: UIButton) {
+        changeFace()
     }
+    
+    func changeFace(){
+        let randomNr = Int(arc4random_uniform(5))
+        
+        ballFaceImage.image = UIImage(named: ballFaces[randomNr])
+        ballFaceImage.isHidden = false
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
 
-
+        changeFace()
+        ballFaceImage.isHidden = false
+        
+    }
+    
 }
 
