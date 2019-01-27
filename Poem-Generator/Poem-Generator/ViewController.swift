@@ -33,21 +33,30 @@ class ViewController: UIViewController {
         generatePage()
         
     }
-
+    
     @IBAction func GeneratePoem(_ sender: Any) {
         var out : String = " "
-        if page == 1{
-            //let weightInPounds : Int = (Int(textInput3.text) / 2)
-            out = "A Mighty "+textInput1.text+" waddles up the stream\nA sleek "+textInput2.text+" caught its gleam\nBut due to its "+textInput3.text+" Pound weight it fell downstream"
-        }
-        else if page == 2{
             
-            out = "Snowfall of the"+textInput1.text+"\n\nTurn away of "+textInput2.text+" received\n\nGrumble in "+textInput3.text+" time"
+        if(page == 1){
+            let weightInPounds : String = String(Int(textInput3.text!)! * 2)
+            let out1 : String = "A Mighty " + textInput1.text! + " waddles up the stream\n"
+            let out2 : String = "A sleek "+textInput2.text!+" caught its gleam\n"
+            let out3  = "But due to its " + weightInPounds + " pound weight it fell down stream"
+            out = out1 + out2 + out3
         }
-        else if page == 3{
+        else if(page == 2){
+            let out1 : String = "Snowfall of the " + textInput1.text! + "\n\n"
+            let out2 : String = "Turn away of "+textInput2.text!+" received\n\n"
+            let out3  = "Grumble in " + textInput3.text! + " time"
+            out = out1 + out2 + out3
+        }
+        else if(page == 3){
+            let out1 : String = "Work in " + textInput1.text! + "\n\n"
+            let out2 : String = "and let " + textInput2.text! + " make the " + textInput3.text!
             
-            out = "Work "+textInput1.text+" in silence\n\nand let "+textInput2.text+" make the "+textInput3.text
+            out = out1 + out2
         }
+        
         textViewPoemOut.text = out
         let utterance = AVSpeechUtterance(string:out)
         utterance.voice = voice
