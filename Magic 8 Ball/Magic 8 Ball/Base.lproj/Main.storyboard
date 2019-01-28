@@ -26,39 +26,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="cSv-Wl-n1p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="cSv-Wl-n1p">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swirl" translatesAutoresizingMaskIntoConstraints="NO" id="hSG-Vs-d5Y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swirl" translatesAutoresizingMaskIntoConstraints="NO" id="hSG-Vs-d5Y">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="B0q-aJ-Olh">
-                                <rect key="frame" x="22" y="449" width="370" height="306"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I Have All The Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAT-Dx-Poj">
-                                <rect key="frame" x="45" y="91" width="324" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lms-CW-Vbj">
-                                <rect key="frame" x="32" y="270" width="351" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
-                                <state key="normal" title="You Have But To Ask">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="rollBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeU-gX-9sc"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svr-af-qtS" userLabel="BottomContainer">
+                                <rect key="frame" x="0.0" y="449" width="414" height="287"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="B0q-aJ-Olh">
+                                        <rect key="frame" x="86" y="22" width="242" height="242"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="242" id="COw-aw-z9f"/>
+                                            <constraint firstAttribute="height" constant="242" id="HK8-GK-bCw"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="B0q-aJ-Olh" firstAttribute="centerX" secondItem="svr-af-qtS" secondAttribute="centerX" id="JAh-4y-QPV"/>
+                                    <constraint firstItem="B0q-aJ-Olh" firstAttribute="centerY" secondItem="svr-af-qtS" secondAttribute="centerY" id="mas-RZ-m8b"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wvy-Io-9Tz" userLabel="MiddleContainer">
+                                <rect key="frame" x="0.0" y="194" width="414" height="255"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lms-CW-Vbj">
+                                        <rect key="frame" x="32" y="91" width="351" height="72"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="351" id="JjQ-B9-vRi"/>
+                                            <constraint firstAttribute="height" constant="72" id="w1k-ay-wd9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="You Have But To Ask">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rollBall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeU-gX-9sc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lms-CW-Vbj" firstAttribute="centerX" secondItem="Wvy-Io-9Tz" secondAttribute="centerX" id="oUT-UY-gcW"/>
+                                    <constraint firstItem="Lms-CW-Vbj" firstAttribute="centerY" secondItem="Wvy-Io-9Tz" secondAttribute="centerY" id="wy1-9V-w5z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzn-Dy-sss" userLabel="TopContainer">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Have All The Answers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAT-Dx-Poj">
+                                        <rect key="frame" x="45" y="72" width="324" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="0Do-sV-LeC"/>
+                                            <constraint firstAttribute="width" constant="324" id="BwF-fL-eDm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="BAT-Dx-Poj" firstAttribute="centerX" secondItem="dzn-Dy-sss" secondAttribute="centerX" id="an8-BW-dxS"/>
+                                    <constraint firstItem="BAT-Dx-Poj" firstAttribute="centerY" secondItem="dzn-Dy-sss" secondAttribute="centerY" id="cvg-0e-LDx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hSG-Vs-d5Y" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="0bE-Q8-rmq"/>
+                            <constraint firstItem="Wvy-Io-9Tz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Dh-iC-t7a"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="bottom" secondItem="cSv-Wl-n1p" secondAttribute="bottom" id="AyB-L0-r7S"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="449" id="Gef-gU-jZb"/>
+                            <constraint firstItem="Wvy-Io-9Tz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H7A-OY-RmG"/>
+                            <constraint firstItem="Wvy-Io-9Tz" firstAttribute="top" secondItem="dzn-Dy-sss" secondAttribute="bottom" id="ODQ-A9-U9N"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OEF-1q-sWD"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="top" secondItem="Wvy-Io-9Tz" secondAttribute="bottom" id="TBa-1H-U05"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UUd-Cd-QhG"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XRk-38-3RZ"/>
+                            <constraint firstItem="Wvy-Io-9Tz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="194" id="YPl-sB-0eI"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="leading" secondItem="cSv-Wl-n1p" secondAttribute="leading" id="ZpX-pi-PeU"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="trailing" secondItem="cSv-Wl-n1p" secondAttribute="trailing" id="aU5-e9-k8q"/>
+                            <constraint firstItem="dzn-Dy-sss" firstAttribute="top" secondItem="cSv-Wl-n1p" secondAttribute="top" id="bsh-dK-9Jk"/>
+                            <constraint firstItem="hSG-Vs-d5Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c5U-00-fVn"/>
+                            <constraint firstItem="Wvy-Io-9Tz" firstAttribute="top" secondItem="dzn-Dy-sss" secondAttribute="bottom" id="clJ-0R-iKR"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fhL-hk-pa7"/>
+                            <constraint firstItem="hSG-Vs-d5Y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fz5-dP-f6V"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdZ-fm-pkC"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="top" secondItem="Wvy-Io-9Tz" secondAttribute="bottom" id="pe6-r7-4F0"/>
+                            <constraint firstItem="svr-af-qtS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s7u-GO-9XD"/>
+                            <constraint firstItem="hSG-Vs-d5Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vuN-JZ-thd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
