@@ -23,9 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-Hy-seD">
-                                <rect key="frame" x="50" y="50" width="640" height="311"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-Hy-seD">
+                                <rect key="frame" x="48" y="51.666666666666657" width="640" height="311"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4TK-6I-qio">
                                         <rect key="frame" x="16" y="0.0" width="80" height="311"/>
@@ -156,6 +155,14 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.66274509800000003" green="0.0" blue="0.031372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eqQ-Hy-seD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EWL-iQ-VDO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eqQ-Hy-seD" secondAttribute="trailing" constant="48" id="W2F-ux-n0b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eqQ-Hy-seD" secondAttribute="bottom" constant="51.329999999999998" id="gKu-mF-wGX"/>
+                            <constraint firstItem="eqQ-Hy-seD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51.670000000000002" id="oW2-1o-hIg"/>
+                            <constraint firstItem="eqQ-Hy-seD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tCz-0L-mYJ"/>
+                            <constraint firstItem="eqQ-Hy-seD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="tpG-cp-3Ox"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
