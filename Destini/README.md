@@ -1,14 +1,11 @@
 # Destini
-Learn to make iOS Apps with [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.0/Xcode 9) - Destini App
+Made using base from [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.2/Xcode 9) - Destini App
 
-Beginner: Download the starter project files as .zip and extract the files to your desktop.
-
-Pro: Git clone to your Xcode projects folder.
+This is a CYOA game  meening  user gets a binary choice in which leads user down a path and ends in any one ending
 
 ## Finished App
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/Destini.gif)
 
 
-
-Copyright © The App Brewery
-
+Made as apart of Angela Yu's course on Udemy
+https://www.udemy.com/ios11-app-development-bootcamp/
