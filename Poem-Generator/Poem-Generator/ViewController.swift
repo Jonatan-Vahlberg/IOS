@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         else if page == 2{
             mainTitle.text = "Haiku Generator"
             firstLabel.text = "One Syllable"
-            secondLabel.text = "Two Syllables"
+            secondLabel.text = "One Syllable"
             thirdLabel.text = "One Syllable"
             textViewPoemOut.text = "Snowfall of the ...\n\nTurn away of ... received\n\nGrumble in ... time"
             imageViewBackground.image = #imageLiteral(resourceName: "haiku")
