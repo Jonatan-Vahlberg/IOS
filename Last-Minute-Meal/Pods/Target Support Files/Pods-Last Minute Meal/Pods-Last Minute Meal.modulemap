@@ -1,0 +1,6 @@
+module Pods_Last_Minute_Meal {
+  umbrella header "Pods-Last Minute Meal-umbrella.h"
+
+  export *
+  module * { export * }
+}

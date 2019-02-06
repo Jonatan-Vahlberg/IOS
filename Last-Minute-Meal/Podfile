@@ -1,0 +1,7 @@
+
+
+target 'Last Minute Meal' do
+    pod 'Alamofire'
+    pod 'SwiftyJSON'
+
+end
