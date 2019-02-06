@@ -12,6 +12,8 @@
 		DFE8304921FF700900A95906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE8304721FF700900A95906 /* Main.storyboard */; };
 		DFE8304B21FF700900A95906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE8304A21FF700900A95906 /* Assets.xcassets */; };
 		DFE8304E21FF700900A95906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE8304C21FF700900A95906 /* LaunchScreen.storyboard */; };
+		DFEC1E5622067AC0004486EE /* StorybookPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC1E5522067AC0004486EE /* StorybookPage.swift */; };
+		DFEC1E58220680A7004486EE /* Storybook.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC1E57220680A7004486EE /* Storybook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		DFE8304A21FF700900A95906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFE8304D21FF700900A95906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFE8304F21FF700900A95906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFEC1E5522067AC0004486EE /* StorybookPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorybookPage.swift; sourceTree = "<group>"; };
+		DFEC1E57220680A7004486EE /* Storybook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storybook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		DFE8304221FF700900A95906 /* Aurora */ = {
 			isa = PBXGroup;
 			children = (
+				DFEC1E54220679DC004486EE /* models */,
 				DFE8304321FF700900A95906 /* AppDelegate.swift */,
 				DFE8304521FF700900A95906 /* ViewController.swift */,
 				DFE8304721FF700900A95906 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				DFE8304F21FF700900A95906 /* Info.plist */,
 			);
 			path = Aurora;
+			sourceTree = "<group>";
+		};
+		DFEC1E54220679DC004486EE /* models */ = {
+			isa = PBXGroup;
+			children = (
+				DFEC1E5522067AC0004486EE /* StorybookPage.swift */,
+				DFEC1E57220680A7004486EE /* Storybook.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			files = (
 				DFE8304621FF700900A95906 /* ViewController.swift in Sources */,
 				DFE8304421FF700900A95906 /* AppDelegate.swift in Sources */,
+				DFEC1E58220680A7004486EE /* Storybook.swift in Sources */,
+				DFEC1E5622067AC0004486EE /* StorybookPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
