@@ -28,7 +28,7 @@ class RecepieModel{
         self.maxIngredients = mIngredients
         self.usedIngredients = uIngredients
         
-        //createImgfromUrl()
+        createImgfromUrl()
     }
     
     func createImgfromUrl(){

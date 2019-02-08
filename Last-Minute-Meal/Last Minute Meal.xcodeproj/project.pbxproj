@@ -10,6 +10,8 @@
 		61AA25B97F59A18F5661AB97 /* libPods-Last Minute Meal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D31274E2D5064C9176545193 /* libPods-Last Minute Meal.a */; };
 		DF796A762209D4DA00D9510D /* RecepieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF796A752209D4DA00D9510D /* RecepieModel.swift */; };
 		DF796A78220A198200D9510D /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF796A77220A198200D9510D /* ResultController.swift */; };
+		DFBCECA6220DE87C00BD7251 /* RecepieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBCECA4220DE87C00BD7251 /* RecepieCell.swift */; };
+		DFBCECA7220DE87C00BD7251 /* RecepieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFBCECA5220DE87C00BD7251 /* RecepieCell.xib */; };
 		DFE5231522083507001B79E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5231422083507001B79E8 /* AppDelegate.swift */; };
 		DFE5231722083507001B79E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5231622083507001B79E8 /* ViewController.swift */; };
 		DFE5231A22083507001B79E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5231822083507001B79E8 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 		D31274E2D5064C9176545193 /* libPods-Last Minute Meal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Last Minute Meal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF796A752209D4DA00D9510D /* RecepieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieModel.swift; sourceTree = "<group>"; };
 		DF796A77220A198200D9510D /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
+		DFBCECA4220DE87C00BD7251 /* RecepieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepieCell.swift; sourceTree = "<group>"; };
+		DFBCECA5220DE87C00BD7251 /* RecepieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecepieCell.xib; sourceTree = "<group>"; };
 		DFE5231122083507001B79E8 /* Last Minute Meal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Last Minute Meal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5231422083507001B79E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5231622083507001B79E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DFBCECA3220DE84C00BD7251 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFBCECA4220DE87C00BD7251 /* RecepieCell.swift */,
+				DFBCECA5220DE87C00BD7251 /* RecepieCell.xib */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DFE5230822083507001B79E8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,7 @@
 		DFE5231322083507001B79E8 /* Last Minute Meal */ = {
 			isa = PBXGroup;
 			children = (
+				DFBCECA3220DE84C00BD7251 /* Model */,
 				DFE5231422083507001B79E8 /* AppDelegate.swift */,
 				DFE5231622083507001B79E8 /* ViewController.swift */,
 				DFE5231822083507001B79E8 /* Main.storyboard */,
@@ -155,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE5231F22083507001B79E8 /* LaunchScreen.storyboard in Resources */,
+				DFBCECA7220DE87C00BD7251 /* RecepieCell.xib in Resources */,
 				DFE5231C22083507001B79E8 /* Assets.xcassets in Resources */,
 				DFE5231A22083507001B79E8 /* Main.storyboard in Resources */,
 			);
@@ -191,6 +206,7 @@
 				DF796A78220A198200D9510D /* ResultController.swift in Sources */,
 				DF796A762209D4DA00D9510D /* RecepieModel.swift in Sources */,
 				DFE5231722083507001B79E8 /* ViewController.swift in Sources */,
+				DFBCECA6220DE87C00BD7251 /* RecepieCell.swift in Sources */,
 				DFE5231522083507001B79E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +348,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Last Minute Meal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Jonatan-vahlberg.Last-Minute-Meal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jonatan-vahlberg.Last-Minute-Meal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Last Minute Meal/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Jonatan-vahlberg.Last-Minute-Meal";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jonatan-vahlberg.Last-Minute-Meal";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

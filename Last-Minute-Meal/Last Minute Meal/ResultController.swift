@@ -12,61 +12,56 @@ protocol CanRecive{
     func returned()
 }
 
-class ResultController: UIViewController {
+class ResultController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
 
-    @IBOutlet weak var scroll: UIScrollView!
-    @IBOutlet weak var content: UIView!
-    @IBOutlet weak var stack: UIStackView!
+    @IBOutlet weak var recepieTableView: UITableView!
+    
+    
+    
     var delegate : CanRecive?
     var recepies = [RecepieModel]()
     var recepieLinks = [Int : String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        createViewsAsNeeded()
+        recepieTableView.delegate = self
+        recepieTableView.dataSource = self
+        recepieTableView.register(UINib(nibName: "RecepieCell",bundle: nil), forCellReuseIdentifier: "recepieCell")
+        configureTableview()
+        recepieTableView.separatorStyle = .none
 
        
     }
     
-    func createViewsAsNeeded(){
+    @IBAction func returnToSearch(_ sender: UIButton) {
         
-        if recepies.count > 0{
-            
-            var i : Int = 1
-            for recepie in recepies{
-                var newView = UIView(frame: CGRect(x: 0, y: 128*i, width: 240, height: 128))
-                newView.isUserInteractionEnabled = true
-                var name = UILabel(frame: CGRect(x: 8, y: 10, width: 224, height: 21))
-                
-                name.text = recepie.name
-                
-                
-                var button = UIButton()
-                button.frame = CGRect(x: 45, y: 100, width: 150, height: 28)
-                button.backgroundColor = UIColor.black
-                button.setTitle("Link to Recepie", for: .normal)
-                recepieLinks[recepie.id] = recepie.recepieURL
-               button.tag = recepie.id
-                button.addTarget(self, action: #selector(self.prepareToLeave(sender:)), for: .touchUpInside)
-                button.isUserInteractionEnabled = true
-                
-                
-                newView.addSubview(name)
-                newView.addSubview(button)
-                content.addSubview(newView)
-                //¢self.view.bringSubview(toFront: button)
-                
-                i += 1
-            }
-        }
+        self.dismiss(animated: true, completion: nil)
     }
-    @objc func prepareToLeave(sender: UIButton){
-        leaveApp(url: recepieLinks[sender.tag]!)
+    
+    
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recepies.count
     }
-    func leaveApp(url : String){
-        UIApplication.shared.openURL(URL(string: url)!)
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recepieCell", for: indexPath) as! RecepieCell
         
-
+        cell.recepieLink[recepies[indexPath.row].id] = recepies[indexPath.row].recepieURL
+        cell.recepieButton.tag = recepies[indexPath.row].id
+        
+        cell.title.text = recepies[indexPath.row].name
+        
+        cell.ingredientsLabel.text = "Ingredients: \(String(recepies[indexPath.row].usedIngredients)) / \(String(recepies[indexPath.row].maxIngredients))"
+        
+        cell.recepieImageView.image = recepies[indexPath.row].recepieImage
+        return cell
     }
-
+    func configureTableview() {
+        recepieTableView.rowHeight = 150
+        recepieTableView.estimatedRowHeight = 150.0
+    }
 }
