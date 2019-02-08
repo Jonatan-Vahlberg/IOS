@@ -109,7 +109,7 @@ class ViewController: UIViewController, CanRecive {
     func getRecepieData(){
         
         let headers: HTTPHeaders =
-        ["X-RapidAPI-Key" : "48a4bafadamshebea31e60190452p1b7d55jsn569e535ca6bf"]
+        ["X-RapidAPI-Key" : "PUT KEY HERE"]
         
         let URLpart = createURLForSpoonacular()
         let url = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/findByIngredients?number=5&limitLicense=true&ranking=1&ingredients=" + URLpart
